@@ -1,17 +1,22 @@
 {
   "name": "Video Speed Controller",
-  "short_name": "videospeed",
-  "version": "0.7.3",
+  "version": "0.7.4",
   "manifest_version": 3,
-  "minimum_chrome_version": "89",
   "description": "Speed up, slow down, advance and rewind HTML5 audio/video with shortcuts",
-  "homepage_url": "https://github.com/igrigorik/videospeed",
+  "homepage_url": "https://github.com/mvallesc/videospeed",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{7ee56258-44b0-4190-bbed-98bcef087777}"
+    }
+  },
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
-  "permissions": ["storage"],
+  "permissions": [
+    "storage"
+  ],
   "options_ui": {
     "page": "options.html",
     "open_in_tab": true
@@ -27,19 +32,36 @@
   "content_scripts": [
     {
       "all_frames": true,
-      "matches": ["http://*/*", "https://*/*", "file:///*"],
+      "matches": [
+        "http://*/*",
+        "https://*/*",
+        "file:///*"
+      ],
       "match_about_blank": true,
       "exclude_matches": [
         "https://plus.google.com/hangouts/*",
         "https://hangouts.google.com/*",
         "https://meet.google.com/*"
       ],
-      "css": ["inject.css"],
-      "js": ["inject.js"]
+      "css": [
+        "inject.css"
+      ],
+      "js": [
+        "inject.js"
+      ]
     }
   ],
-  "web_accessible_resources": [{
-    "resources": ["inject.css", "shadow.css"],
-    "matches": ["http://*/*", "https://*/*", "file:///*"]
-  }]
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "inject.css",
+        "shadow.css"
+      ],
+      "matches": [
+        "http://*/*",
+        "https://*/*",
+        "file:///*"
+      ]
+    }
+  ]
 }
