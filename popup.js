@@ -4,11 +4,11 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   document.querySelector("#about").addEventListener("click", function () {
-    window.open("https://github.com/igrigorik/videospeed");
+    window.open("https://github.com/mvallesc/videospeed");
   });
 
   document.querySelector("#feedback").addEventListener("click", function () {
-    window.open("https://github.com/igrigorik/videospeed/issues");
+    window.open("https://github.com/mvallesc/videospeed/issues");
   });
 
   document.querySelector("#enable").addEventListener("click", function () {
