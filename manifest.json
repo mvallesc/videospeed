@@ -1,11 +1,14 @@
 {
   "name": "Video Speed Controller",
-  "short_name": "videospeed",
   "version": "0.8.0",
   "manifest_version": 3,
-  "minimum_chrome_version": "89",
   "description": "Speed up, slow down, advance and rewind HTML5 audio/video with shortcuts",
-  "homepage_url": "https://github.com/igrigorik/videospeed",
+  "homepage_url": "https://github.com/mvallesc/videospeed",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{7ee56258-44b0-4190-bbed-98bcef087777}"
+    }
+  },
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -29,7 +32,9 @@
     "default_popup": "popup.html"
   },
   "background": {
-    "service_worker": "background.js"
+    "scripts": [
+      "background.js"
+    ]
   },
   "content_scripts": [
     {

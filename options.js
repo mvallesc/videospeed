@@ -364,11 +364,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // About and feedback button event listeners
   document.getElementById("about").addEventListener("click", function () {
-    window.open("https://github.com/igrigorik/videospeed");
+    window.open("https://github.com/mvallesc/videospeed");
   });
 
   document.getElementById("feedback").addEventListener("click", function () {
-    window.open("https://github.com/igrigorik/videospeed/issues");
+    window.open("https://github.com/mvallesc/videospeed/issues");
   });
 
   function eventCaller(event, className, funcName) {
